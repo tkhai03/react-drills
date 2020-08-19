@@ -17,11 +17,11 @@ export default class App extends Component {
 
   render() {
     let foodstoDisplay = this.state.foods
-      .filter((element, i) => {
+      .filter((element, index) => {
         return element.includes(this.state.filterString)
       })
-      .map((element, i) => {
-        return <h2 key={i}>{element}</h2>
+      .map((element, index) => {
+        return <h2 key={index}>{element}</h2>
       })
 
 
